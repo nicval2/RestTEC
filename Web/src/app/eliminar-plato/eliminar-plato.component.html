@@ -1,0 +1,32 @@
+
+<button class="btn btn-secondary" [routerLink]="['/gestion-platos']">
+  back
+</button>
+
+<div class="container py-4" style="margin: auto;">
+  <div style="margin: auto; " class="card">
+    <br>
+    <h3 [ngStyle]="{'text-align':'center'}">
+        Selecione el plato que quiere eliminar
+    </h3>
+    <br>
+  
+    <select>
+      <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+    </select>
+
+    <br>
+    
+    <div style="margin: auto; ">
+      <button class="btn btn-primary" [routerLink]="['/']">
+        Buscar
+      </button>
+    </div>
+    
+
+    <br>
+  </div>
+
+</div>
+
+

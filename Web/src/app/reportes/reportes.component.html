@@ -1,0 +1,32 @@
+
+<button class="btn btn-secondary" [routerLink]="['/admin-options']">
+  back
+</button>
+
+<div class="container py-4" style="margin: auto;">
+  <div style="margin: auto; " class="card">
+    <br>
+    <h3 [ngStyle]="{'text-align':'center'}">
+        Selecione el reporte que quiere generar
+    </h3>
+    <br>
+  
+    <select>
+      <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+    </select>
+
+    <br>
+    
+    <div style="margin: auto; ">
+      <button class="btn btn-primary" [routerLink]="['/']">
+        Generar Reporte
+      </button>
+    </div>
+    
+
+    <br>
+  </div>
+
+</div>
+
+

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ChefOptionsComponent } from '../chef-options/chef-options.component';
+import { AdminOptionsComponent } from '../admin-options/admin-options.component';
 
 @Component({
   selector: 'app-admin-login',
@@ -8,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdminLoginComponent implements OnInit {
   
   validated = false;
+  validatedchef = false;
 
   administrador = {
     user : '',
@@ -19,6 +22,12 @@ export class AdminLoginComponent implements OnInit {
     if(this.administrador.password == 'user' && this.administrador.user == 'user'){
       console.log(this.administrador)
       this.validated = true;
+      this.validatedchef = false;
+    }
+    if(this.administrador.password == '1234' && this.administrador.user == '1234'){
+      console.log(this.administrador)
+      this.validatedchef = true;
+      this.validated = false;
     }
   }
 

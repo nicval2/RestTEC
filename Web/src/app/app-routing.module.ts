@@ -1,33 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MovieSelectionComponent } from './movie-selection/movie-selection.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminOptionsComponent } from './admin-options/admin-options.component';
-import { LocationSelectionComponent } from './location-selection/location-selection.component';
-import { IncorporateLocationComponent } from './incorporate-location/incorporate-location.component';
-import { IncorporateMovieComponent } from './incorporate-movie/incorporate-movie.component';
-import { IncorporateProyectionComponent } from './incorporate-proyection/incorporate-proyection.component';
-import { IncorporateScreenComponent } from './incorporate-screen/incorporate-screen.component';
-import { ProyectionSelectionComponent } from './proyection-selection/proyection-selection.component';
-import { SeatSelectionComponent } from './seat-selection/seat-selection.component';
+import { ActualizarPlatoComponent } from './actualizar-plato/actualizar-plato.component';
+import { GestionPlatosComponent } from './gestion-platos/gestion-platos.component';
+import { TomarPedidoComponent } from './tomar-pedido/tomar-pedido.component';
+import { CrearPlatoComponent } from './crear-plato/crear-plato.component';
+import { EliminarPlatoComponent } from './eliminar-plato/eliminar-plato.component';
+import { ChefOptionsComponent } from './chef-options/chef-options.component';
+import { GestionMenuComponent } from './gestion-menu/gestion-menu.component';
+import { ReportesComponent } from './reportes/reportes.component';
 
 //In charge of administrate the url of the web
 const routes: Routes = [
   //Path for the main page and his redirector
   {
-    path: 'location-selection',
-    component: LocationSelectionComponent
+    path: 'admin-login',
+    component: AdminLoginComponent
   },
   {
     path: '',
-    redirectTo:'/location-selection',
+    redirectTo:'/admin-login',
     pathMatch: 'full'
+    
   },
 
-  //Path for admin login
   {
-    path: 'admin-login',
-    component: AdminLoginComponent
+    path: 'actualizar-plato',
+    component: ActualizarPlatoComponent
   },
 
   //Path for admin options
@@ -35,47 +35,34 @@ const routes: Routes = [
     path: 'admin-options',
     component: AdminOptionsComponent
   },
-
-  //Path for incorporate location
   {
-    path: 'incorporate-location',
-    component: IncorporateLocationComponent
+    path: 'chef-options',
+    component : ChefOptionsComponent
+  },
+  {
+    path: 'gestion-platos',
+    component: GestionPlatosComponent
   },
 
-  //Path for incorporate movie
   {
-    path: 'incorporate-movie',
-    component: IncorporateMovieComponent
+    path: 'tomar-pedido',
+    component: TomarPedidoComponent
   },
-
-  //Path for incorporate proyection
   {
-    path: 'incorporate-proyection',
-    component: IncorporateProyectionComponent
+    path:'crear-plato',
+    component: CrearPlatoComponent
   },
-
-  //Path for incorporate screen
   {
-    path: 'incorporate-screen',
-    component: IncorporateScreenComponent
+    path: 'eliminar-plato',
+    component: EliminarPlatoComponent
   },
-
-  //Path for movie selection
   {
-    path: 'movie-selection',
-    component: MovieSelectionComponent
+    path: 'gestion-menu',
+    component: GestionMenuComponent
   },
-
-  //Path for proyection selection
   {
-    path: 'proyection-selection',
-    component: ProyectionSelectionComponent
-  },
-
-  //Path for seat selection
-  {
-    path: 'seat-selection',
-    component: SeatSelectionComponent
+    path: 'reportes',
+    component: ReportesComponent
   }
 
 ];

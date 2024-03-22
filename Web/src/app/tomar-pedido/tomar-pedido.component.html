@@ -1,0 +1,28 @@
+<button class="btn btn-danger"  [routerLink]="['/chef-options']">
+    Back
+</button>
+
+<div class="container py-4" style="margin: auto;"> 
+
+    <div style="margin: auto; " class="card" > 
+        <br>   
+        <div style="margin: auto;"*ngFor="let row of rowsArray">
+            <button class=" btn btn-outline-primary" type="checkbox" *ngFor="let location of columnsArray">
+                <img src="https://cdn.discordapp.com/attachments/1017681477447712794/1153389448961196113/85671.png" alt="">
+                Pedido # : Alitas, Papas medianas, refresco
+            </button>
+        </div>
+        
+        <br>
+        <div  style="margin: auto;">
+            <button class="btn btn-primary" >
+                Escoger Pedido
+            </button>
+        </div>
+        <br>
+        
+    </div> 
+</div>
+
+
+

@@ -1,8 +1,4 @@
 
-<button class="btn btn-danger"  [routerLink]="['/location-selection']">
-  Back
-</button>
-
 <div class="container py-4" style="margin: auto;">
   
   <div style="margin: auto; " class="card">
@@ -22,12 +18,17 @@
       
       <br>
         <button class="btn btn-primary"  [disabled]="User.invalid || Password.invalid"  >
-          Ingresar
+          Validar
         </button>
         <br>
         <br>
         <button class="btn btn-primary" [disabled]="!validated" [routerLink]="['/admin-options']">
-          Submit
+          Ingrese Admin
+        </button>
+      <br>
+      <br>
+        <button class="btn btn-primary" [disabled]="!validatedchef" [routerLink]="['/chef-options']">
+          Ingrese Chef
         </button>
       <br>
     </form>
