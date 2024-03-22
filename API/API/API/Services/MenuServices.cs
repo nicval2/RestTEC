@@ -13,10 +13,7 @@ public class MenuServices
             return M;
         }
 
-    private void WriteArchive(List<Menu> menuServices)
-    {
-        throw new NotImplementedException();
-    }
+
 
     public Menu Element(int id)
         {
@@ -90,15 +87,7 @@ public class MenuServices
             }
         }
 
-        public Menu Update(Menu M, int ssn)
-        {
-            Delete(ssn);
-            _menuServices.Add(M);
-            WriteArchive(_menuServices);
-            return M;
-        }
-
-        private void WriteArchive(List<TiposPlatos> classifications)
+        private void WriteArchive(List<Menu> menuServices)
         {
             StreamWriter stream = new StreamWriter("./Menu.txt",true);
             foreach (Menu me in this._menuServices)
@@ -108,6 +97,15 @@ public class MenuServices
             }
             stream.Close();
         }
+
+        public Menu Update(Menu M, int ssn)
+        {
+            Delete(ssn);
+            _menuServices.Add(M);
+            WriteArchive(_menuServices);
+            return M;
+        }
+
         
 
         public List<Menu> LoadArchive()

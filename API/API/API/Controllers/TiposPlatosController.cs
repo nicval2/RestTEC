@@ -10,12 +10,12 @@ public class TiposPlatosController
     private TiposPlatosServices _TiposPlatosServices = new TiposPlatosServices();
 
     [HttpPost("/tiposplatos")]
-    public TiposPlatos CreateProyection([FromBody] TiposPlatos pl)
+    public TiposPlatos CrearTipoPlato([FromBody] TiposPlatos pl)
     {
         return _TiposPlatosServices.Save(pl);
     }
 
-    [HttpGet("/tiposplatos")]
+    [HttpGet("/tiposplatosget")]
     public List<TiposPlatos> GetAll()
     {
         return _TiposPlatosServices.LoadArchive();

@@ -1,1 +1,1 @@
-ID, Nombre, Descripcion
+{ID:1;Nombre:"Hamburguesas"; Descripcion: "Muy ricas"}

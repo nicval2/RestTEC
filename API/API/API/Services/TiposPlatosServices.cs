@@ -93,7 +93,7 @@ public class TiposPlatosServices
             return C;
         }
 
-        private void WriteArchive(List<TiposPlatos> classifications)
+        private void WriteArchive(List<TiposPlatos> TiposPlatosServices)
         {
             StreamWriter stream = new StreamWriter("./TiposPlatos.txt",true);
             foreach (TiposPlatos pl in this._TiposPlatosServices)

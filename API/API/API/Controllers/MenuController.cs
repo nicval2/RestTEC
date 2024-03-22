@@ -10,12 +10,12 @@ public class MenuController
     private MenuServices _menuServices = new MenuServices();
 
     [HttpPost("/menu")]
-    public Menu CreateProyection([FromBody] Menu me)
+    public Menu CrearPlato([FromBody] Menu me)
     {
         return _menuServices.Save(me);
     }
 
-    [HttpGet("/menu")]
+    [HttpGet("/menuget")]
     public List<Menu> GetAll()
     {
         return _menuServices.LoadArchive();
