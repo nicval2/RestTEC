@@ -11,5 +11,7 @@
         public string Email { get; set; }
         
         public DateTime BirthDate { get; set; }
+        
+        public string Direction {get; set;}
     }
 }

@@ -11,7 +11,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminOptionsComponent } from './admin-options/admin-options.component';
 import { TomarPedidoComponent } from './tomar-pedido/tomar-pedido.component';
 import { ActualizarPlatoComponent } from './actualizar-plato/actualizar-plato.component';
-import { GestionPlatosComponent } from './gestion-platos/gestion-platos.component';
+import { GestionTiposComponent } from './gestion-tipos/gestion-tipos.component';
 import { CrearPlatoComponent } from './crear-plato/crear-plato.component';
 import { EliminarPlatoComponent } from './eliminar-plato/eliminar-plato.component';
 import { ChefOptionsComponent } from './chef-options/chef-options.component';
@@ -23,6 +23,9 @@ import { APIService } from './api.service';
 import { HttpClientModule } from '@angular/common/http'
 import { MyHttpInterceptor } from './http-interceptor.service';
 import { ReportesComponent } from './reportes/reportes.component';
+import { CrearTipoPlatoComponent } from './crear-tipo-plato/crear-tipo-plato.component';
+import { ActualizarTipoPlatoComponent } from './actualizar-tipo-plato/actualizar-tipo-plato.component';
+import { EliminarTipoPlatoComponent } from './eliminar-tipo-plato/eliminar-tipo-plato.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +34,15 @@ import { ReportesComponent } from './reportes/reportes.component';
     AdminOptionsComponent,
     TomarPedidoComponent,
     ActualizarPlatoComponent,
-    GestionPlatosComponent,
+    GestionTiposComponent,
     CrearPlatoComponent,
     EliminarPlatoComponent,
     ChefOptionsComponent,
     GestionMenuComponent,
-    ReportesComponent
+    ReportesComponent,
+    CrearTipoPlatoComponent,
+    ActualizarTipoPlatoComponent,
+    EliminarTipoPlatoComponent
   ],
   imports: [
     BrowserModule,
