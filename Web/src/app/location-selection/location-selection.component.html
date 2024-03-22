@@ -1,0 +1,32 @@
+
+<button class="btn btn-secondary" [routerLink]="['/admin-login']">
+  Login
+</button>
+
+<div class="container py-4" style="margin: auto;">
+  <div style="margin: auto; " class="card">
+    <br>
+    <h3 [ngStyle]="{'text-align':'center'}">
+        Selecione donde quiere ver su película
+    </h3>
+    <br>
+  
+    <select>
+      <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+    </select>
+
+    <br>
+    
+    <div style="margin: auto; ">
+      <button class="btn btn-primary" [routerLink]="['/movie-selection']">
+        Buscar
+      </button>
+    </div>
+    
+
+    <br>
+  </div>
+
+</div>
+
+

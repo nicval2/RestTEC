@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminMovie.AdminMovie">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        tools:ignore="UselessParent">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_marginTop="7dp"
+            android:layout_height="72dp"
+            android:onClick="onClickRegister"
+            android:text="@string/registar"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="72dp"
+        android:onClick="onClickEdit"
+        android:text="@string/editar"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="72dp"
+        android:onClick="onClickDelete"
+        android:text="@string/eliminar"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_height="72dp"
+        android:onClick="onClickConsult"
+        android:text="@string/consult"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="198dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round"
+            android:onClick="onClickBack"
+            android:text="@string/back"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CineTec"
+        tools:targetApi="31">
+        <activity
+            android:name=".adminProcc.consultProcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminProcc.deleteProcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminProcc.editProcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminProcc.AdminProcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminSala.consultSalas"
+            android:exported="false" />
+        <activity
+            android:name=".adminSala.deleteSalas"
+            android:exported="false" />
+        <activity
+            android:name=".adminSala.editSalas"
+            android:exported="false" />
+        <activity
+            android:name=".adminSala.AdminSalas"
+            android:exported="false" />
+        <activity
+            android:name=".adminSucursal.consultSucursal"
+            android:exported="false" />
+        <activity
+            android:name=".adminSucursal.deleteSucursal"
+            android:exported="false" />
+        <activity
+            android:name=".adminSucursal.editSucursal"
+            android:exported="false" />
+        <activity
+            android:name=".adminSucursal.AdminSucursal"
+            android:exported="false" />
+        <activity
+            android:name=".adminMovie.consultMovie"
+            android:exported="false" />
+        <activity
+            android:name=".adminMovie.deleteMovie"
+            android:exported="false" />
+        <activity
+            android:name=".adminMovie.editMovie"
+            android:exported="false" />
+        <activity
+            android:name=".adminMovie.AdminMovie"
+            android:exported="false" />
+        <activity
+            android:name=".confirmView"
+            android:exported="false" />
+        <activity
+            android:name=".adminProcc.registerProcc"
+            android:exported="false" />
+        <activity
+            android:name=".adminSala.registerSalas"
+            android:exported="false" />
+        <activity
+            android:name=".adminSucursal.registerSucursales"
+            android:exported="false" />
+        <activity
+            android:name=".adminMovie.registerMovies"
+            android:exported="false" />
+        <activity
+            android:name=".adminView"
+            android:exported="false" />
+        <activity
+            android:name=".peliculasScreen"
+            android:exported="false" />
+        <activity
+            android:name=".sesionScreen"
+            android:exported="false" />
+        <activity
+            android:name=".sucursalScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

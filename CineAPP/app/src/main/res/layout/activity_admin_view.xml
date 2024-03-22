@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:src="@mipmap/ic_launcher_foreground"
+            tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/Rpelis"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="0dp"
+            android:onClick="onCLickRpeliculas"
+            android:text="@string/Rpelis"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+            android:id="@+id/Rsucursales"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="0dp"
+            android:onClick="onCLickRsucursales"
+            android:text="@string/Rsucursales"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+            android:id="@+id/RSlas"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="0dp"
+            android:onClick="onCLickRsalas"
+            android:text="@string/Rsalas"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+            android:id="@+id/S1"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="0dp"
+            android:onClick="onCLickAsigProcc"
+            android:text="@string/AsigProyecc"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="198dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/round"
+            android:onClick="onClickBack"
+            android:text="@string/back"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

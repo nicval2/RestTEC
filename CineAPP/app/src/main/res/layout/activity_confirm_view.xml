@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmView">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background"
+        tools:ignore="UselessParent">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/ic_launcher_foreground"
+        tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="317dp"
+            android:layout_height="158dp"
+            android:layout_marginStart="45dp"
+            android:text="@string/operacion"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+        <ImageView
+            android:id="@+id/cornet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="50dp"
+            android:src="@mipmap/ic_launcher_cornet"
+            tools:ignore="ContentDescription" />
+        <Button
+            android:id="@+id/back"
+            android:layout_width="249dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/password"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round"
+            android:onClick="onClickBack"
+            android:text="@string/back"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,VisualLintButtonSize" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

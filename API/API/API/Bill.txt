@@ -1,0 +1,1 @@
+{"IdBill":123,"Ssn":2345,"Location":"Arriba","Screen":1,"NumSeats":2,"Price":12}

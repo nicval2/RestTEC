@@ -1,0 +1,40 @@
+<button class="btn btn-danger"  [routerLink]="['/proyection-selection']">
+    Back
+</button>
+
+<div class="container py-4" style="margin: auto;"> 
+
+    <div style="margin: auto; " class="card" > 
+        <br>   
+        <div style="margin: auto;"*ngFor="let row of rowsArray">
+            <button class=" btn btn-outline-primary" type="checkbox" *ngFor="let location of columnsArray">
+                <img src="https://cdn.discordapp.com/attachments/1017681477447712794/1153389448961196113/85671.png" alt="">
+            </button>
+        </div>
+        <br>
+        <div style="margin: auto;">
+            <p [ngStyle]="{'text-align':'center','font-size.px':20}">Cédula</p>
+            <input type="text">
+        </div>
+        <div style="margin: auto;">
+            <p [ngStyle]="{'text-align':'center','font-size.px':20}">Nombre</p>
+            <input type="text">
+        </div>
+        <div style="margin: auto;">
+            <p [ngStyle]="{'text-align':'center', 'font-size.px':20}">Email</p>
+            <input type="text">
+        </div>
+        <br>
+        <br>
+        <div  style="margin: auto;">
+            <button class="btn btn-primary" >
+                Comprar
+            </button>
+        </div>
+        <br>
+        
+    </div> 
+</div>
+
+
+

@@ -1,0 +1,37 @@
+
+<button class="btn btn-danger"  [routerLink]="['/location-selection']">
+  Back
+</button>
+
+<div class="container py-4" style="margin: auto;">
+  
+  <div style="margin: auto; " class="card">
+    <div style= "margin:auto;"></div>
+    <form style="margin: auto" (ngSubmit)=" Validar()">
+      <h2 [ngStyle]="{'text-align':'center'}">Login</h2>
+      <br>
+      <p [ngStyle]="{'text-align':'center'}">Usuario</p>
+      <div style= "margin:auto;">
+        <input type="text" name="Usuario" class="form-control" placeholder="Aqui va el Usuario" [(ngModel)] = "administrador.user" required #User = 'ngModel'>    
+      </div>
+      <br>
+      <p [ngStyle]="{'text-align':'center'}">Contraseña</p>
+      <div style= "margin:auto;">
+        <input type="password" name="Contraseña" class="form-control" placeholder="Aqui va la Contraseña" [(ngModel)] = "administrador.password" required #Password = 'ngModel'>
+      </div>
+      
+      <br>
+        <button class="btn btn-primary"  [disabled]="User.invalid || Password.invalid"  >
+          Ingresar
+        </button>
+        <br>
+        <br>
+        <button class="btn btn-primary" [disabled]="!validated" [routerLink]="['/admin-options']">
+          Submit
+        </button>
+      <br>
+    </form>
+  <br>
+</div>
+  
+</div>
