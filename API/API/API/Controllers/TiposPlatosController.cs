@@ -15,7 +15,7 @@ public class TiposPlatosController
         return _TiposPlatosServices.Save(pl);
     }
 
-    [HttpGet("/tiposplatosget")]
+    [HttpGet("/tiposplatos")]
     public List<TiposPlatos> GetAll()
     {
         return _TiposPlatosServices.LoadArchive();

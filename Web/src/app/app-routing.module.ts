@@ -13,6 +13,8 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { CrearTipoPlatoComponent } from './crear-tipo-plato/crear-tipo-plato.component';
 import { ActualizarTipoPlatoComponent } from './actualizar-tipo-plato/actualizar-tipo-plato.component';
 import { EliminarTipoPlatoComponent } from './eliminar-tipo-plato/eliminar-tipo-plato.component';
+import { GestionPedidoComponent } from './gestion-pedido/gestion-pedido.component';
+import { ReasignarPedidoComponent } from './reasignar-pedido/reasignar-pedido.component';
 
 //In charge of administrate the url of the web
 const routes: Routes = [
@@ -78,6 +80,14 @@ const routes: Routes = [
   {
     path: 'eliminar-tipo-plato',
     component: EliminarTipoPlatoComponent
+  },
+  {
+    path: 'gestion-pedido',
+    component: GestionPedidoComponent
+  },
+  {
+    path: 'reasignar-pedido',
+    component: ReasignarPedidoComponent
   }
 
 ];

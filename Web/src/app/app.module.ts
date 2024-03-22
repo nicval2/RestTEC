@@ -26,6 +26,8 @@ import { ReportesComponent } from './reportes/reportes.component';
 import { CrearTipoPlatoComponent } from './crear-tipo-plato/crear-tipo-plato.component';
 import { ActualizarTipoPlatoComponent } from './actualizar-tipo-plato/actualizar-tipo-plato.component';
 import { EliminarTipoPlatoComponent } from './eliminar-tipo-plato/eliminar-tipo-plato.component';
+import { GestionPedidoComponent } from './gestion-pedido/gestion-pedido.component';
+import { ReasignarPedidoComponent } from './reasignar-pedido/reasignar-pedido.component';
 
 @NgModule({
   declarations: [
@@ -42,13 +44,16 @@ import { EliminarTipoPlatoComponent } from './eliminar-tipo-plato/eliminar-tipo-
     ReportesComponent,
     CrearTipoPlatoComponent,
     ActualizarTipoPlatoComponent,
-    EliminarTipoPlatoComponent
+    EliminarTipoPlatoComponent,
+    GestionPedidoComponent,
+    ReasignarPedidoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    APIService
   ],
   providers: [ { provide: HTTP_INTERCEPTORS, useClass: MyHttpInterceptor, multi: true }],
   bootstrap: [AppComponent]

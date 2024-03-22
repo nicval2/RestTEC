@@ -15,7 +15,7 @@ public class MenuController
         return _menuServices.Save(me);
     }
 
-    [HttpGet("/menuget")]
+    [HttpGet("/menu")]
     public List<Menu> GetAll()
     {
         return _menuServices.LoadArchive();
