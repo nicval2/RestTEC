@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./eliminar-tipo-plato.component.css']
 })
 export class EliminarTipoPlatoComponent {
-  locations : string[] =
+  tipoplato : string[] =
   [
-    'San José','Alajuela', 'Heredia','Cartago','Guanacaste', 'Limón'
+    'Postres', 'Platos fuertes', 'Entradas'
   ];
 
 }

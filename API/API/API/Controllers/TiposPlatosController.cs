@@ -1,5 +1,7 @@
+using System.Runtime;
 using API.Models;
 using API.Services;
+using Microsoft.AspNetCore.Authentication.OAuth.Claims;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
@@ -26,4 +28,11 @@ public class TiposPlatosController
     {
         return _TiposPlatosServices.Search(id);
     }
-}
+
+    [HttpDelete("/{id:int}/tiposplatos")]
+    public TiposPlatos DeleteByID(TiposPlatos pl,int id){
+        return _TiposPlatosServices.Update(pl, id);
+    }
+
+    }
+

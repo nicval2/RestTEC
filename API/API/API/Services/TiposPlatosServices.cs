@@ -78,6 +78,7 @@ public class TiposPlatosServices
                 {
                     _TiposPlatosServices.RemoveAt(i);
                     WriteArchive(_TiposPlatosServices);
+                
                     break;
                 }
 

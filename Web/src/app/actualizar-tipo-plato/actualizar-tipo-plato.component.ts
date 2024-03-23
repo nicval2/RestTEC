@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./actualizar-tipo-plato.component.css']
 })
 export class ActualizarTipoPlatoComponent {
-  locations : string[] =
+  tipoplatos : string[] =
   [
-    'San José','Alajuela', 'Heredia','Cartago','Guanacaste', 'Limón'
+    'Postres', 'Platos fuertes', 'Entradas'
   ];
 
 }

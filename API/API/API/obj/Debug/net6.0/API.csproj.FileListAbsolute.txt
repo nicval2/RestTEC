@@ -166,3 +166,5 @@ C:\Users\User\Documents\GitHub\RestTEC\API\API\API\obj\Debug\net6.0\refint\API.d
 C:\Users\User\Documents\GitHub\RestTEC\API\API\API\obj\Debug\net6.0\API.pdb
 C:\Users\User\Documents\GitHub\RestTEC\API\API\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\User\Documents\GitHub\RestTEC\API\API\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\User\Documents\GitHub\RestTEC\API\API\API\bin\Debug\net6.0\TiposPlatos.Json
+C:\Users\User\Documents\GitHub\RestTEC\API\API\API\bin\Debug\net6.0\Menu.Json

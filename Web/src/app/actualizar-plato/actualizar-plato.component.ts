@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./actualizar-plato.component.css']
 })
 export class ActualizarPlatoComponent {
-  locations : string[] =
+  platos : string[] =
   [
-    'San José','Alajuela', 'Heredia','Cartago','Guanacaste', 'Limón'
+    'Hamburguesa con Queso','Gaseosa', 'Pollo frito'
   ];
 
 }
