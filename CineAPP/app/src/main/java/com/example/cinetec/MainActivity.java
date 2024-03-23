@@ -9,29 +9,24 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button sucursal;
     Button iniciarSesion;
-    Button peliculas;
+    Button resgistrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sucursal =findViewById(R.id.sucursal);
         iniciarSesion =findViewById(R.id.iniciarSesion);
-        peliculas =findViewById(R.id.peliculas);
+        resgistrarse = findViewById(R.id.register);
     }
-    public void onClickSucursal(View view){
-        Intent intent = new Intent(this, sucursalScreen.class);
-        startActivity(intent);
-    }
+
     public void onClickInSesion(View view){
         Intent intent = new Intent(this, sesionScreen.class);
         startActivity(intent);
     }
-    public void onClickPelicuas(View view){
-        Intent intent = new Intent(this, peliculasScreen.class);
+    public void onClickRegistro(View view){
+        Intent intent = new Intent(this, registerScreen.class);
         startActivity(intent);
     }
 }

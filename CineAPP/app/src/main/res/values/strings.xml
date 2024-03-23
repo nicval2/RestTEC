@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CineTec</string>
+    <string name="app_name">RestTec</string>
     <string name="pelicula">Cartelera</string>
     <string name="sucursal">Comprar</string>
     <string name="iniciar_S">Iniciar Sesion</string>

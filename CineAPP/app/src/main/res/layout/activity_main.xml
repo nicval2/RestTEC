@@ -7,8 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:background="@color/background"
+        android:orientation="vertical"
         tools:ignore="UselessParent">
 
         <ImageView
@@ -22,48 +22,34 @@
             tools:ignore="ContentDescription" />
 
         <Button
-            android:id="@+id/sucursal"
-            android:layout_width="338dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/password"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="30dp"
-            android:background="@color/buttons"
-            android:onClick="onClickSucursal"
-            android:text="@string/sucursal"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,VisualLintButtonSize" />
-
-        <Button
-            android:id="@+id/peliculas"
-            android:layout_width="338dp"
-            android:layout_height="50dp"
-            android:layout_below="@+id/password"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="30dp"
-            android:background="@color/buttons"
-            android:onClick="onClickPelicuas"
-            android:text="@string/pelicula"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,VisualLintButtonSize" />
-
-        <Button
             android:id="@+id/iniciarSesion"
-            android:layout_width="100dp"
+            android:layout_width="338dp"
             android:layout_height="50dp"
-            android:layout_marginStart="300dp"
-            android:layout_marginTop="220dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/round"
+            android:layout_below="@+id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/buttons"
             android:onClick="onClickInSesion"
-            android:text="@string/admin"
+            android:text="@string/iniciar_S"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
-            android:textSize="13sp"
+            tools:ignore="ObsoleteLayoutParam,TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="338dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/register"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/buttons"
+            android:baselineAligned="false"
+            android:onClick="onClickRegistro"
+            android:text="@string/registro"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
             tools:ignore="ObsoleteLayoutParam,TextContrastCheck,VisualLintButtonSize" />
 
     </LinearLayout>
